@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce5396a3449ade488c9d6e2c2a0adc6, type: 3}
   m_Name: SceneLoaderContainer
   m_EditorClassIdentifier: 
-  levelScenePath: 
-  mainMenuPath: 
-  mazeLevelSelectionPath: 
+  levelScenePath: Assets/Scenes/MazeLevel.unity
+  mainMenuPath: Assets/Scenes/MainMenu.unity
+  mazeLevelSelectionPath: Assets/Scenes/MazeLevelSelection.unity
   loadingScreenPath: 
