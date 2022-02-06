@@ -1,38 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class MazeRenderer : MonoBehaviour
 {
-    [SerializeField]
-    [Range(1, 20)]
+    #region Serialized Fields
+
+    [SerializeField, Range(1, 20)]
     private int width = 20;
 
-    [SerializeField]
-    [Range(1, 20)]
+    [SerializeField, Range(1, 20)]
     private int height = 20;
 
     [SerializeField]
     private float size = 1f;
 
     [SerializeField]
-    private Transform wallPrefab = null;
+    private Transform wallPrefab;
 
     [SerializeField]
-    private Transform floorPrefab = null;
-    
-    
+    private Transform floorPrefab;
+
+    #endregion
+
+    #region Private Fields
+
     private GameObject rightWalls;
     private GameObject leftWalls;
     private GameObject bottomWalls;
     private GameObject topWalls;
-    
-    void Start()
+
+    #endregion
+
+    #region Unity Callbacks
+
+    private void Start()
     {
         var maze = MazeGenerator.Generate(width, height);
         GameObject mazeObject = Draw(maze);
     }
+
+    #endregion
+
+    #region Public Methods
+
+    public void SetParentObject(GameObject parentOb, GameObject childObject)
+    {
+        childObject.transform.SetParent(parentOb.transform);
+    }
+
+    #endregion
+
+    #region Private Methods
 
     private GameObject Draw(WallState[,] maze)
     {
@@ -40,8 +57,8 @@ public class MazeRenderer : MonoBehaviour
         GameObject wallsObj = new GameObject("Walls");
         Transform floor = Instantiate(floorPrefab, transform);
 
-        float widthFloor = width + width*0.01f;
-        float heightFloor = height + height*0.01f;
+        float widthFloor = width + width * 0.01f;
+        float heightFloor = height + height * 0.01f;
         floor.localScale = new Vector3(widthFloor, 0.2f, heightFloor);
         floor.position += new Vector3(-0.5f, -0.5f, -0.5f);
 
@@ -95,24 +112,15 @@ public class MazeRenderer : MonoBehaviour
                         SetParentObject(wallsObj, bottomWalls);
                     }
                 }
-                
             }
-
-
         }
-        
-  
+
         GameObject floorObj = floor.gameObject;
         SetParentObject(mazeObject, floorObj);
         SetParentObject(mazeObject, wallsObj);
 
         return mazeObject;
-        
-    }
-    
-    public void SetParentObject(GameObject parentOb, GameObject childObject)
-    {
-        childObject.transform.SetParent(parentOb.transform);
     }
 
+    #endregion
 }

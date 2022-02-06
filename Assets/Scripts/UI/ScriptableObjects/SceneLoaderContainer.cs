@@ -26,6 +26,11 @@ public class SceneLoaderContainer: ScriptableObject
    
    private int currentLevel;
    
+   public string LevelScenePath { get => levelScenePath;}
+   public string MainMenuPath { get => mainMenuPath;}
+   public string MazeLevelSelectionPath { get => mazeLevelSelectionPath;}
+   public string LoadingScreenPath { get => loadingScreenPath;}
+   
  
    public int CurrentLevel {
                get => currentLevel;
