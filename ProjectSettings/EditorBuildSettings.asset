@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: efb3d978f7061d84da140b1161cd6f8d
@@ -17,4 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MazeLevel.unity
     guid: 4ee2aecd43e56f745a589cbe47a85916
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 76d317cbcb3b53741982233e23418b9a, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e6d454d6a3f564d4698b9abf7eda1b87, type: 2}
