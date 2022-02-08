@@ -12,4 +12,9 @@ public class MazeLevelSelectCanvas : MonoBehaviour
     {
         SceneManager.LoadScene(sceneLoaderContainer.MainMenuPath);
     }
+
+    public void GoToMazeScene()
+    {
+        SceneManager.LoadScene(sceneLoaderContainer.LevelScenePath);
+    }
 }
