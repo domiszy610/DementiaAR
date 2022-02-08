@@ -1,42 +1,52 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 namespace MazeInitialization
 {
-    [RequireComponent((typeof(ARSessionOrigin)))]
+    [RequireComponent((typeof(ARPlaneManager)))]
     public class MazeSpawner : MonoBehaviour
     {
-
-        private GameObject spawnedMaze;
-        private GameObject spawnedSphere;
+        [SerializeField]
+        private GameObject mazePrefab;
+        // [SerializeField]
+        // private GameObject spawnedSphere;
 
         [SerializeField]
-        private GameObject placeblePrefab;
+        private GameObject instructionPanel;
+        [SerializeField]
+        private Button dismissButton;
 
-        private ARSessionOrigin sessionOrigin;
-        private ARRaycastManager raycastManager;
-        private static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
+       
+        private GameObject placeablePrefab;
+
+
+
+        [SerializeField]
+        private ARPlaneManager arPlaneManager;
+        
+        
 
         private void Awake()
         {
-            sessionOrigin = GetComponent<ARSessionOrigin>();
-            raycastManager = sessionOrigin.GetComponent<ARRaycastManager>();
+            dismissButton.onClick.AddListener(Dismiss);
+            arPlaneManager = GetComponent<ARPlaneManager>();
 
+            arPlaneManager.planesChanged += PlaneChanged;
         }
 
-        private void Update()
-        {
-            if (raycastManager.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f)), s_Hits, TrackableType.PlaneWithinPolygon))
-            {
-                Pose hitPose = s_Hits[0].pose;
-                placeblePrefab.transform.position = hitPose.position;
+        private void Dismiss() => instructionPanel.SetActive(false);
 
-                if (!placeblePrefab.activeSelf)
-                {
-                    placeblePrefab.SetActive(true);
-                }
+        private void PlaneChanged(ARPlanesChangedEventArgs args)
+        {
+            if (args.added != null && placeablePrefab == null)
+            {
+                ARPlane arPlane = args.added[0];
+                placeablePrefab = Instantiate(mazePrefab, arPlane.transform.position, Quaternion.identity);
+                
             }
         }
  
