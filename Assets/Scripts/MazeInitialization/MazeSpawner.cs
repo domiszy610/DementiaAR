@@ -45,7 +45,7 @@ namespace MazeInitialization
             if (args.added != null && placeablePrefab == null)
             {
                 ARPlane arPlane = args.added[0];
-                placeablePrefab = Instantiate(mazePrefab, arPlane.transform.position, Quaternion.identity);
+                placeablePrefab = Instantiate(mazePrefab, arPlane.transform.position, Quaternion.identity); //Move Instantiate to Awake, here change position
                 
             }
         }
