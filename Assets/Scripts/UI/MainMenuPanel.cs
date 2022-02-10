@@ -5,9 +5,15 @@ namespace UI
 {
     public class MainMenuPanel : MonoBehaviour
     {
+        #region Serialized Fields
+
         [SerializeField]
         private SceneLoaderContainer sceneLoaderContainer;
-        
+
+        #endregion
+
+        #region Public Methods
+
         public void PlayMazeGame()
         {
             SceneManager.LoadScene(sceneLoaderContainer.MazeLevelSelectionPath);
@@ -17,6 +23,7 @@ namespace UI
         {
             Application.Quit();
         }
-    
+
+        #endregion
     }
 }

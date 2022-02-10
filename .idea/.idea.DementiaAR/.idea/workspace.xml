@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@4.1.7/Runtime/AR/ARPlaneMeshVisualizer.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -68,6 +71,10 @@
       <workItem from="1644103235994" duration="5307000" />
       <workItem from="1644279979305" duration="4581000" />
       <workItem from="1644344338120" duration="8561000" />
+      <workItem from="1644365561702" duration="3046000" />
+      <workItem from="1644372550042" duration="4945000" />
+      <workItem from="1644429466787" duration="4709000" />
+      <workItem from="1644452776358" duration="1932000" />
     </task>
     <servers />
   </component>
