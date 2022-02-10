@@ -274,6 +274,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3835942962288945733, guid: 6ab44787c15de1d48b527cde177dc6bb, type: 3}
+      propertyPath: rotationPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3835942962288945733, guid: 6ab44787c15de1d48b527cde177dc6bb, type: 3}
+      propertyPath: rotationSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5158392805355982750, guid: 6ab44787c15de1d48b527cde177dc6bb, type: 3}
       propertyPath: m_Name
       value: Maze1
