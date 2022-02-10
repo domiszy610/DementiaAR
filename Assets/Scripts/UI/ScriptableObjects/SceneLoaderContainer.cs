@@ -23,11 +23,8 @@ public class SceneLoaderContainer : ScriptableObject
 
     [SerializeField]
     private string loadingScreenPath;
-
-    #endregion
-
-    #region Private Fields
-
+    
+    [SerializeField]
     private int currentLevel;
 
     #endregion
