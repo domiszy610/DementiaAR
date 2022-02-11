@@ -42,7 +42,7 @@ namespace MazeInitialization
 
         private void Update()
         {
-            if (mazePrefab)
+            if (mazePrefab && Input.touchCount == 0)
             {
                 if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
                 {
