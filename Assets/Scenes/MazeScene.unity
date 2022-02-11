@@ -342,6 +342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994045240}
+  - component: {fileID: 1994045241}
   m_Layer: 0
   m_Name: MazeGenerator
   m_TagString: Untagged
@@ -363,3 +364,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1994045241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994045239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a2d9e24ce4c6a429707caa61188a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 2
+  height: 2
+  size: 1
+  wallPrefab: {fileID: 2169737496560733159, guid: 353d25a43083fd04393b23cf6fdcb81f, type: 3}
+  floorPrefab: {fileID: 2074493187842170661, guid: fcc30a7d6b31d7e42b9c2b32f3bfb6ca, type: 3}
