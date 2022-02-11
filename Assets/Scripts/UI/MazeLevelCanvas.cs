@@ -4,15 +4,10 @@ using UnityEngine.SceneManagement;
 
 namespace UI
 {
-    public class MazeLevelSelectCanvas : MonoBehaviour
+    public class MazeLevelCanvas : MonoBehaviour
     {
-        #region Serialized Fields
-
         [SerializeField]
         private SceneLoaderContainer sceneLoaderContainer;
-
-        #endregion
-
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -21,18 +16,9 @@ namespace UI
             }
         }
         
-        #region Public Methods
-
         public void GoBackToMenu()
         {
             SceneManager.LoadScene(sceneLoaderContainer.MainMenuPath);
         }
-
-        public void GoToMazeScene()
-        {
-            SceneManager.LoadScene(sceneLoaderContainer.LevelScenePath);
-        }
-
-        #endregion
     }
 }

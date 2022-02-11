@@ -1,3 +1,4 @@
+using UI.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,14 @@ namespace UI
         private SceneLoaderContainer sceneLoaderContainer;
 
         #endregion
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                QuitGame();
+            }
+        }
 
         #region Public Methods
 
