@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 215095362}
   - component: {fileID: 215095361}
   - component: {fileID: 215095360}
+  - component: {fileID: 215095364}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -223,6 +224,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &215095364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215095359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564a700664e248d4c876cdd2e2a92bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
 --- !u!1001 &361731973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1313,7 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100004, guid: ff6dc36862fe41641bb21568d92147c9, type: 3}
+  m_Material: {fileID: 2100000, guid: 0c634d43759f96547a2894e2744199f1, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

@@ -1,18 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class HandleEnd : MonoBehaviour
+namespace MazeGameplay
 {
-    // Start is called before the first frame update
-    void Start()
+    public class HandleEnd : MonoBehaviour
     {
+        [SerializeField]
+        private GameObject winPanel;
+        [SerializeField]
+        private GameObject winEffect;
+        [SerializeField]
+        private AudioSource audioSource;
         
-    }
+        [SerializeField]
+        private float effectTime;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void OnTriggerEnter(Collider other)
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(Win());
+        }
+
+        private IEnumerator Win()
+        {
+            audioSource.Play();
+            winPanel.SetActive(true);
+            winEffect.SetActive(true);
+
+            yield return new WaitForSeconds(effectTime);
+
+            audioSource.Stop();
+            winPanel.SetActive(false);
+            winEffect.SetActive(false);
+        }
     }
 }

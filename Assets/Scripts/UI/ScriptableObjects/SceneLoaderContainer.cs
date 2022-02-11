@@ -1,48 +1,64 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SceneContainer", fileName = "SceneLoaderContainer")]
-public class SceneLoaderContainer : ScriptableObject
+namespace UI.ScriptableObjects
 {
-    #region Events
+    [CreateAssetMenu(menuName = "SceneContainer", fileName = "SceneLoaderContainer")]
+    public class SceneLoaderContainer : ScriptableObject
+    {
+        #region Events
 
-    public event Action OnModified;
+        public event Action OnModifiedCurrentLevel;
+        public event Action OnModifiedUnlockedLevel;
 
-    #endregion
+        #endregion
 
-    #region Serialized Fields
+        #region Serialized Fields
 
-    [SerializeField]
-    private string levelScenePath;
+        [SerializeField]
+        private string levelScenePath;
 
-    [SerializeField]
-    private string mainMenuPath;
+        [SerializeField]
+        private string mainMenuPath;
 
-    [SerializeField]
-    private string mazeLevelSelectionPath;
+        [SerializeField]
+        private string mazeLevelSelectionPath;
 
-    [SerializeField]
-    private string loadingScreenPath;
+        [SerializeField]
+        private List<GameObject> mazeObjects;
     
-    [SerializeField]
-    private int currentLevel;
+        [SerializeField]
+        private int currentLevelIndex;
+    
+        private int unlockedLevelIndex;
 
-    #endregion
+        #endregion
 
-    #region Public Properties
+        #region Public Properties
 
-    public string LevelScenePath { get => levelScenePath; }
-    public string MainMenuPath { get => mainMenuPath; }
-    public string MazeLevelSelectionPath { get => mazeLevelSelectionPath; }
+        public string LevelScenePath { get => levelScenePath; }
+        public string MainMenuPath { get => mainMenuPath; }
+        public string MazeLevelSelectionPath { get => mazeLevelSelectionPath; }
 
-    public int CurrentLevel {
-        get => currentLevel;
-        set
-        {
-            currentLevel = value;
-            OnModified?.Invoke();
+        public int CurrentLevelIndex {
+            get => currentLevelIndex;
+            set
+            {
+                currentLevelIndex = value;
+                OnModifiedCurrentLevel?.Invoke();
+            }
         }
-    }
+    
+        public int UnlockedLevelIndex {
+            get => unlockedLevelIndex;
+            set
+            {
+                unlockedLevelIndex = value;
+                OnModifiedUnlockedLevel?.Invoke();
+            }
+        }
 
-    #endregion
+        #endregion
+    }
 }
