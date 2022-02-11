@@ -7,10 +7,6 @@ namespace MazeGameplay
     {
         [SerializeField]
         private GameObject winPanel;
-        [SerializeField]
-        private GameObject winEffect;
-        [SerializeField]
-        private AudioSource audioSource;
         
         [SerializeField]
         private float effectTime;
@@ -23,15 +19,11 @@ namespace MazeGameplay
 
         private IEnumerator Win()
         {
-            audioSource.Play();
             winPanel.SetActive(true);
-            winEffect.SetActive(true);
 
             yield return new WaitForSeconds(effectTime);
 
-            audioSource.Stop();
             winPanel.SetActive(false);
-            winEffect.SetActive(false);
         }
     }
 }
