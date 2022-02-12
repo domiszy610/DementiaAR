@@ -58,7 +58,7 @@ namespace UI.ScriptableObjects
             set
             {
                 unlockedLevelIndex = value;
-                //OnModifiedUnlockedLevel?.Invoke();
+                PlayerPrefs.SetInt("UnlockedMazeLevelIndex", value);
             }
         }
 

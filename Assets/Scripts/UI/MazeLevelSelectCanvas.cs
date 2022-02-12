@@ -81,6 +81,6 @@ namespace UI
         
         private List<Button> GetButtonsList() => levelSelectionPanel.GetComponentsInChildren<Button>().ToList();
 
-        private int GetUnlockedLevelsIndex() => sceneLoaderContainer.UnlockedLevelIndex;
+        private int GetUnlockedLevelsIndex() => PlayerPrefs.GetInt("UnlockedMazeLevelIndex");
     }
 }
