@@ -54,6 +54,7 @@ public class MazeRenderer : MonoBehaviour
     private GameObject Draw(WallState[,] maze)
     {
         GameObject mazeObject = new GameObject("Maze");
+        GameObject mazeComponentsObject = new GameObject("MazeComponents");
         GameObject wallsObj = new GameObject("Walls");
         Transform floor = Instantiate(floorPrefab, transform);
 
@@ -75,6 +76,7 @@ public class MazeRenderer : MonoBehaviour
                     topWall.position = position + new Vector3(0, 0, size / 2);
                     topWall.localScale = new Vector3(size, topWall.localScale.y, topWall.localScale.z);
                     topWalls = topWall.gameObject;
+                    //GameObject topWallObj = AddRigidBody(topWalls);
                     SetParentObject(wallsObj, topWalls);
                 }
 
@@ -85,6 +87,7 @@ public class MazeRenderer : MonoBehaviour
                     leftWall.localScale = new Vector3(size, leftWall.localScale.y, leftWall.localScale.z);
                     leftWall.eulerAngles = new Vector3(0, 90, 0);
                     leftWalls = leftWall.gameObject;
+                    //GameObject leftWallObj = AddRigidBody(leftWalls);
                     SetParentObject(wallsObj, leftWalls);
                 }
 
@@ -97,6 +100,7 @@ public class MazeRenderer : MonoBehaviour
                         rightWall.localScale = new Vector3(size, rightWall.localScale.y, rightWall.localScale.z);
                         rightWall.eulerAngles = new Vector3(0, 90, 0);
                         rightWalls = rightWall.gameObject;
+                        //GameObject rightWallObj = AddRigidBody(rightWalls);
                         SetParentObject(wallsObj, rightWalls);
                     }
                 }
@@ -109,6 +113,7 @@ public class MazeRenderer : MonoBehaviour
                         bottomWall.position = position + new Vector3(0, 0, -size / 2);
                         bottomWall.localScale = new Vector3(size, bottomWall.localScale.y, bottomWall.localScale.z);
                         bottomWalls = bottomWall.gameObject;
+                        //GameObject bottomWallObj = AddRigidBody(bottomWalls);
                         SetParentObject(wallsObj, bottomWalls);
                     }
                 }
@@ -116,9 +121,24 @@ public class MazeRenderer : MonoBehaviour
         }
 
         GameObject floorObj = floor.gameObject;
-        SetParentObject(mazeObject, floorObj);
-        SetParentObject(mazeObject, wallsObj);
+        mazeComponentsObject = AddRigidBody(mazeComponentsObject);
+        SetParentObject(mazeComponentsObject, floorObj);
+        SetParentObject(mazeComponentsObject, wallsObj);
+        SetParentObject(mazeObject, mazeComponentsObject);
 
+        return mazeObject;
+    }
+
+    private GameObject AddRigidBody(GameObject mazeObject)
+    {
+        Rigidbody rigidbody = mazeObject.AddComponent<Rigidbody>();
+        rigidbody.mass = 1;
+        rigidbody.drag = 0;
+        rigidbody.angularDrag = 0f;
+        rigidbody.interpolation = RigidbodyInterpolation.None;
+        rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
+        rigidbody.isKinematic = false;
+        rigidbody.useGravity = false;
         return mazeObject;
     }
 
