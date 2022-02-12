@@ -23,6 +23,8 @@ namespace MazeInitialization
 
         #endregion
 
+        public List<GameObject> MazeObjects => mazeObjects;
+
         #region Unity Callbacks
 
         private void Awake()

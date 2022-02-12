@@ -13,7 +13,7 @@ namespace MazeInitialization
         #region Serialized Fields
 
         [SerializeField]
-        private List<GameObject> mazeObjects;
+        private MazeConstructor mazeConstructor;
         [SerializeField]
         private GameObject instructionPanel;
         [SerializeField]
@@ -36,6 +36,8 @@ namespace MazeInitialization
         private GameObject mazeObject;
 
         private int currentIndex;
+        
+        private List<GameObject> mazeObjects;
 
         #endregion
 
@@ -44,6 +46,10 @@ namespace MazeInitialization
         private void Awake()
         {
             arRaycastManager = GetComponent<ARRaycastManager>();
+        }
+        private void Start()
+        {
+            mazeObjects = mazeConstructor.MazeObjects;
             currentIndex = GetCurrentLevelIndex();
 
             if (currentIndex == 0)
@@ -63,7 +69,7 @@ namespace MazeInitialization
 
         private void Update()
         {
-            if (mazeObject)
+            if (mazeObject && Input.touchCount<= 0)
             {
                 if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
                 {
