@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8553020327893434576}
   - component: {fileID: 7655266550442309687}
   - component: {fileID: 3290434318534652913}
+  - component: {fileID: 5789515472181422384}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -95,6 +96,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5789515472181422384
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179211562891603190}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &197056666514014783
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +124,7 @@ GameObject:
   - component: {fileID: 2499051602536133985}
   - component: {fileID: 3018142410529107865}
   - component: {fileID: 4940150746999138147}
+  - component: {fileID: 8855772472122223453}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -190,6 +208,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8855772472122223453
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197056666514014783}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &961550913494176329
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +268,7 @@ GameObject:
   - component: {fileID: 6128365109011428290}
   - component: {fileID: 3611422068190869297}
   - component: {fileID: 1414940256958667071}
+  - component: {fileID: 941849692390920191}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -317,6 +352,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &941849692390920191
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610138346193302846}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2076133711284321591
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +380,7 @@ GameObject:
   - component: {fileID: 3867199911356835667}
   - component: {fileID: 2097430933819273901}
   - component: {fileID: 4188013616672676381}
+  - component: {fileID: 7881263170243818090}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -412,6 +464,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7881263170243818090
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076133711284321591}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4723872787445309443
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +492,7 @@ GameObject:
   - component: {fileID: 7677498335960817317}
   - component: {fileID: 4094606681704867961}
   - component: {fileID: 30128012065669658}
+  - component: {fileID: 6698904196818154110}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -507,6 +576,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6698904196818154110
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4723872787445309443}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4967695270611226286
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +604,7 @@ GameObject:
   - component: {fileID: 2719889296946972672}
   - component: {fileID: 4490509750804011688}
   - component: {fileID: 5697709010046528642}
+  - component: {fileID: 5257377185340661799}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -602,6 +688,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5257377185340661799
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4967695270611226286}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6063850705943689025
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,8 +716,9 @@ GameObject:
   - component: {fileID: 4367356197057520639}
   - component: {fileID: 5996165855256977201}
   - component: {fileID: 7757811106161780616}
+  - component: {fileID: 6096931635030020562}
   m_Layer: 0
-  m_Name: FloorWood(Clone)
+  m_Name: FloorWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,6 +800,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6096931635030020562
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6063850705943689025}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6323667958484742623
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +867,7 @@ GameObject:
   - component: {fileID: 1836879810994482966}
   - component: {fileID: 689173924338442298}
   - component: {fileID: 1328520737484883670}
+  - component: {fileID: 8686483870904215895}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -831,6 +951,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8686483870904215895
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860030403267097777}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6925669531383964151
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +979,7 @@ GameObject:
   - component: {fileID: 1017339126687605798}
   - component: {fileID: 6714271798799944227}
   - component: {fileID: 7530663149948510238}
+  - component: {fileID: 2790253977545540702}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -926,6 +1063,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2790253977545540702
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925669531383964151}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7333250688346201068
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +1091,7 @@ GameObject:
   - component: {fileID: 5296650890346137035}
   - component: {fileID: 8647689650275826417}
   - component: {fileID: 2747041386083762755}
+  - component: {fileID: 1193953218837850164}
   m_Layer: 0
   m_Name: WallWood(Clone)
   m_TagString: Untagged
@@ -1021,6 +1175,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1193953218837850164
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7333250688346201068}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7343011943934139047
 GameObject:
   m_ObjectHideFlags: 0
