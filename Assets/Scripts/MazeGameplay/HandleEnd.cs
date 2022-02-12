@@ -23,8 +23,11 @@ namespace MazeGameplay
 
         private void OnTriggerEnter(Collider other)
         {
-            Destroy(other.gameObject);
-            StartCoroutine(Win());
+            if (other.gameObject.CompareTag("Player"))
+            {
+                Destroy(other.gameObject);
+                StartCoroutine(Win());
+            }
         }
 
         #endregion
