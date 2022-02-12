@@ -1,6 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
 using UI.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace UI
 {
@@ -10,10 +13,47 @@ namespace UI
 
         [SerializeField]
         private SceneLoaderContainer sceneLoaderContainer;
+        [SerializeField]
+        private GameObject levelSelectionPanel;
+
+        private List<Button> levelSelectionButtons;
+
 
         #endregion
 
         #region Unity Callbacks
+
+        private void Awake()
+        {
+            levelSelectionButtons = GetButtonsList();
+            UnlockButtons(levelSelectionButtons);
+            AttachOnClickListeners(levelSelectionButtons);
+
+        }
+
+        private void UnlockButtons(List<Button> buttons)
+        {
+            int unlockedLevelsIndex = GetUnlockedLevelsIndex();
+            for(int i =0; i<= unlockedLevelsIndex; i++)
+            {
+                buttons[i].interactable = true;
+            }
+        }
+
+        private void AttachOnClickListeners(List<Button> buttons)
+        {
+            for(int i =0; i< buttons.Count; i++)
+            {
+                int index = i;
+                buttons[i].onClick.AddListener(() => { ChangeLevel(index);});
+            }
+        }
+
+        private void ChangeLevel(int levelIndex)
+        {
+            sceneLoaderContainer.CurrentLevelIndex = levelIndex;
+            GoToMazeScene();
+        }
 
         private void Update()
         {
@@ -38,5 +78,9 @@ namespace UI
         }
 
         #endregion
+        
+        private List<Button> GetButtonsList() => levelSelectionPanel.GetComponentsInChildren<Button>().ToList();
+
+        private int GetUnlockedLevelsIndex() => sceneLoaderContainer.UnlockedLevelIndex;
     }
 }

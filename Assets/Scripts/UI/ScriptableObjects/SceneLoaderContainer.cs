@@ -10,7 +10,7 @@ namespace UI.ScriptableObjects
         #region Events
 
         public event Action OnModifiedCurrentLevel;
-        public event Action OnModifiedUnlockedLevel;
+        //public event Action OnModifiedUnlockedLevel;
 
         #endregion
 
@@ -24,9 +24,6 @@ namespace UI.ScriptableObjects
 
         [SerializeField]
         private string mazeLevelSelectionPath;
-
-        [SerializeField]
-        private List<GameObject> mazeObjects;
 
         [SerializeField]
         private int levelCount;
@@ -43,9 +40,9 @@ namespace UI.ScriptableObjects
 
         #region Public Properties
 
-        public string LevelScenePath { get => levelScenePath; }
-        public string MainMenuPath { get => mainMenuPath; }
-        public string MazeLevelSelectionPath { get => mazeLevelSelectionPath; }
+        public string LevelScenePath => levelScenePath;
+        public string MainMenuPath => mainMenuPath;
+        public string MazeLevelSelectionPath => mazeLevelSelectionPath;
 
         public int CurrentLevelIndex {
             get => currentLevelIndex;
@@ -61,11 +58,11 @@ namespace UI.ScriptableObjects
             set
             {
                 unlockedLevelIndex = value;
-                OnModifiedUnlockedLevel?.Invoke();
+                //OnModifiedUnlockedLevel?.Invoke();
             }
         }
 
-        public int LevelCount { get => levelCount; set { levelCount = value; } }
+        public int LevelCount { get => levelCount; set => levelCount = value; }
 
         #endregion
     }
