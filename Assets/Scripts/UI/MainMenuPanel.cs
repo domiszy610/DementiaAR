@@ -13,6 +13,8 @@ namespace UI
 
         #endregion
 
+        #region Unity Callbacks
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -20,6 +22,8 @@ namespace UI
                 QuitGame();
             }
         }
+
+        #endregion
 
         #region Public Methods
 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UI.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
@@ -12,13 +13,15 @@ namespace MazeInitialization
         #region Serialized Fields
 
         [SerializeField]
-        private GameObject mazePrefab;
+        private List<GameObject> mazeObjects;
         [SerializeField]
         private GameObject instructionPanel;
         [SerializeField]
         private Button dismissButton;
         [SerializeField]
         private Camera arCamera;
+        [SerializeField]
+        private SceneLoaderContainer sceneLoaderContainer;
 
         #endregion
 
@@ -30,6 +33,10 @@ namespace MazeInitialization
 
         private static List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
 
+        private GameObject mazeObject;
+
+        private int currentIndex;
+
         #endregion
 
         #region Unity Callbacks
@@ -37,12 +44,26 @@ namespace MazeInitialization
         private void Awake()
         {
             arRaycastManager = GetComponent<ARRaycastManager>();
-            dismissButton.onClick.AddListener(Dismiss);
+            currentIndex = GetCurrentLevelIndex();
+
+            if (currentIndex == 0)
+            {
+                instructionPanel.SetActive(true);
+                dismissButton.onClick.AddListener(Dismiss);
+            }
+
+            GetMazeObject(currentIndex);
+            sceneLoaderContainer.OnModifiedCurrentLevel += NextGameObject;
+        }
+
+        private void OnDisable()
+        {
+            sceneLoaderContainer.OnModifiedCurrentLevel -= NextGameObject;
         }
 
         private void Update()
         {
-            if (mazePrefab && Input.touchCount == 0)
+            if (mazeObject)
             {
                 if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
                 {
@@ -55,13 +76,31 @@ namespace MazeInitialization
 
         #region Private Methods
 
-        private void Dismiss() => instructionPanel.SetActive(false);
+        private void GetMazeObject(int index)
+        {
+            mazeObject = mazeObjects[index];
+            mazeObject.SetActive(true);
+        }
+
+        private void NextGameObject()
+        {
+            Destroy(mazeObject);
+            currentIndex = GetCurrentLevelIndex();
+            GetMazeObject(currentIndex);
+        }
+
+        private void Dismiss()
+        {
+            instructionPanel.SetActive(false);
+        }
 
         private void MoveMazeObject()
         {
             Pose hitPose = raycastHits[0].pose;
-            mazePrefab.transform.position = hitPose.position;
+            mazeObject.transform.position = hitPose.position;
         }
+
+        private int GetCurrentLevelIndex() => sceneLoaderContainer.CurrentLevelIndex;
 
         #endregion
     }

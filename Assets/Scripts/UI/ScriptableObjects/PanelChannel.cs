@@ -1,21 +1,27 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace UI.ScriptableObjects
 {
-
-[CreateAssetMenu(menuName = "PanelChannel", fileName = "PanelChannel")]
+    [CreateAssetMenu(menuName = "PanelChannel", fileName = "PanelChannel")]
     public class PanelChannel : ScriptableObject
     {
+        #region Events
+
         public event Action OnModifiedEndPanelActive;
         public event Action OnModifiedWinPanelActive;
-      
+
+        #endregion
+
+        #region Private Fields
+
         private bool isEndPanelActive;
         private bool isWinPanelActive;
-        
+
+        #endregion
+
+        #region Public Properties
+
         public bool IsEndPanelActive {
             get => isEndPanelActive;
             set
@@ -24,7 +30,7 @@ namespace UI.ScriptableObjects
                 OnModifiedEndPanelActive?.Invoke();
             }
         }
-        
+
         public bool IsWinPanelActive {
             get => isWinPanelActive;
             set
@@ -34,6 +40,6 @@ namespace UI.ScriptableObjects
             }
         }
 
-
+        #endregion
     }
 }

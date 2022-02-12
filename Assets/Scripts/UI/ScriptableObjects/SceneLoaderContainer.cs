@@ -27,10 +27,16 @@ namespace UI.ScriptableObjects
 
         [SerializeField]
         private List<GameObject> mazeObjects;
-    
+
         [SerializeField]
+        private int levelCount;
+
+        #endregion
+
+        #region Private Fields
+
         private int currentLevelIndex;
-    
+
         private int unlockedLevelIndex;
 
         #endregion
@@ -49,7 +55,7 @@ namespace UI.ScriptableObjects
                 OnModifiedCurrentLevel?.Invoke();
             }
         }
-    
+
         public int UnlockedLevelIndex {
             get => unlockedLevelIndex;
             set
@@ -58,6 +64,8 @@ namespace UI.ScriptableObjects
                 OnModifiedUnlockedLevel?.Invoke();
             }
         }
+
+        public int LevelCount { get => levelCount; set { levelCount = value; } }
 
         #endregion
     }

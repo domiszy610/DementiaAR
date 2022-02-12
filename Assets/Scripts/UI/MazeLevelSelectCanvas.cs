@@ -13,6 +13,8 @@ namespace UI
 
         #endregion
 
+        #region Unity Callbacks
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -20,7 +22,9 @@ namespace UI
                 GoBackToMenu();
             }
         }
-        
+
+        #endregion
+
         #region Public Methods
 
         public void GoBackToMenu()
