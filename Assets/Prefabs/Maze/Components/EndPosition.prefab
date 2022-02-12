@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2829758374717451504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.424, y: -0.0106211, z: -0.32}
-  m_LocalScale: {x: 0.065, y: 0, z: 0.065}
+  m_LocalScale: {x: 0.65, y: 0, z: 0.65}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5aee01630080da34f8b6bbb825acd3d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,4 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winEffectTime: 5
+  sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
   panelChannel: {fileID: 11400000, guid: 55406210be681f543a601bc7a3fb6769, type: 2}
