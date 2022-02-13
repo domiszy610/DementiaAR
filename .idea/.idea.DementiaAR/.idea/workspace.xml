@@ -11,10 +11,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@4.1.7/Runtime/AR/ARPlaneMeshVisualizer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScriptableObjects/PanelChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeInitialization/MazeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MazeLevelCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScriptableObjects/SceneLoaderContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGenerator/MazeRenderer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGameplay/MazeRotationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeInitialization/MazeConstructor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGameplay/HandleEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenuPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MazeLevelSelectCanvas.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="24cWp4ddGm2z7DwQrOXxa6E5sYT" />
   <component name="ProjectViewState">
@@ -81,6 +93,14 @@
       <workItem from="1644486260974" duration="1440000" />
       <workItem from="1644519307616" duration="3363000" />
       <workItem from="1644524872610" duration="6500000" />
+      <workItem from="1644606832806" duration="2806000" />
+      <workItem from="1644614522560" duration="4334000" />
+      <workItem from="1644621313399" duration="1438000" />
+      <workItem from="1644623449599" duration="10687000" />
+      <workItem from="1644638788678" duration="4567000" />
+      <workItem from="1644691605091" duration="10829000" />
+      <workItem from="1644717409546" duration="4696000" />
+      <workItem from="1644722815508" duration="9370000" />
     </task>
     <servers />
   </component>

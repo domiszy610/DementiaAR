@@ -42,7 +42,7 @@ namespace MazeInitialization
 
             foreach (GameObject mazePrefab in mazePrefabs)
             {
-                GameObject newMaze = Instantiate(mazePrefab, mazePosition, Quaternion.identity);
+                GameObject newMaze = Instantiate(mazePrefab, mazePosition, mazePrefab.transform.rotation);
                 newMaze.SetActive(false);
                 mazeObjects.Add(newMaze);
             }
