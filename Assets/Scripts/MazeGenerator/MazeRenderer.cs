@@ -121,7 +121,7 @@ public class MazeRenderer : MonoBehaviour
         }
 
         GameObject floorObj = floor.gameObject;
-        floorObj  = AddRigidBody(floorObj);
+        floorObj = AddRigidBody(floorObj);
         SetParentObject(mazeComponentsObject, floorObj);
         SetParentObject(mazeComponentsObject, wallsObj);
         SetParentObject(mazeObject, mazeComponentsObject);
@@ -139,6 +139,7 @@ public class MazeRenderer : MonoBehaviour
         rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
         rigidbody.isKinematic = true;
         rigidbody.useGravity = false;
+
         return mazeObject;
     }
 

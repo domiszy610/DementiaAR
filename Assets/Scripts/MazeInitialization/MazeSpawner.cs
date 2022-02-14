@@ -36,7 +36,7 @@ namespace MazeInitialization
         private GameObject mazeObject;
 
         private int currentIndex;
-        
+
         private List<GameObject> mazeObjects;
 
         #endregion
@@ -47,6 +47,7 @@ namespace MazeInitialization
         {
             arRaycastManager = GetComponent<ARRaycastManager>();
         }
+
         private void Start()
         {
             mazeObjects = mazeConstructor.MazeObjects;
@@ -69,7 +70,7 @@ namespace MazeInitialization
 
         private void Update()
         {
-            if (mazeObject && Input.touchCount<= 0)
+            if (mazeObject && Input.touchCount <= 0)
             {
                 if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
                 {

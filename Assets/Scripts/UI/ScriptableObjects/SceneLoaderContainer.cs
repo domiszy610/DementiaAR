@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace UI.ScriptableObjects
@@ -10,7 +9,6 @@ namespace UI.ScriptableObjects
         #region Events
 
         public event Action OnModifiedCurrentLevel;
-        //public event Action OnModifiedUnlockedLevel;
 
         #endregion
 
@@ -65,5 +63,7 @@ namespace UI.ScriptableObjects
         public int LevelCount { get => levelCount; set => levelCount = value; }
 
         #endregion
+
+        //public event Action OnModifiedUnlockedLevel;
     }
 }

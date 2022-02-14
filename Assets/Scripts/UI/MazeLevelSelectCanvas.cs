@@ -16,8 +16,11 @@ namespace UI
         [SerializeField]
         private GameObject levelSelectionPanel;
 
-        private List<Button> levelSelectionButtons;
+        #endregion
 
+        #region Private Fields
+
+        private List<Button> levelSelectionButtons;
 
         #endregion
 
@@ -28,31 +31,6 @@ namespace UI
             levelSelectionButtons = GetButtonsList();
             UnlockButtons(levelSelectionButtons);
             AttachOnClickListeners(levelSelectionButtons);
-
-        }
-
-        private void UnlockButtons(List<Button> buttons)
-        {
-            int unlockedLevelsIndex = GetUnlockedLevelsIndex();
-            for(int i =0; i<= unlockedLevelsIndex; i++)
-            {
-                buttons[i].interactable = true;
-            }
-        }
-
-        private void AttachOnClickListeners(List<Button> buttons)
-        {
-            for(int i =0; i< buttons.Count; i++)
-            {
-                int index = i;
-                buttons[i].onClick.AddListener(() => { ChangeLevel(index);});
-            }
-        }
-
-        private void ChangeLevel(int levelIndex)
-        {
-            sceneLoaderContainer.CurrentLevelIndex = levelIndex;
-            GoToMazeScene();
         }
 
         private void Update()
@@ -78,9 +56,38 @@ namespace UI
         }
 
         #endregion
-        
+
+        #region Private Methods
+
+        private void UnlockButtons(List<Button> buttons)
+        {
+            int unlockedLevelsIndex = GetUnlockedLevelsIndex();
+
+            for (int i = 0; i <= unlockedLevelsIndex; i++)
+            {
+                buttons[i].interactable = true;
+            }
+        }
+
+        private void AttachOnClickListeners(List<Button> buttons)
+        {
+            for (int i = 0; i < buttons.Count; i++)
+            {
+                int index = i;
+                buttons[i].onClick.AddListener(() => { ChangeLevel(index); });
+            }
+        }
+
+        private void ChangeLevel(int levelIndex)
+        {
+            sceneLoaderContainer.CurrentLevelIndex = levelIndex;
+            GoToMazeScene();
+        }
+
         private List<Button> GetButtonsList() => levelSelectionPanel.GetComponentsInChildren<Button>().ToList();
 
         private int GetUnlockedLevelsIndex() => PlayerPrefs.GetInt("UnlockedMazeLevelIndex");
+
+        #endregion
     }
 }

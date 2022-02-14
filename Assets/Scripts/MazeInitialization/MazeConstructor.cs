@@ -23,7 +23,11 @@ namespace MazeInitialization
 
         #endregion
 
+        #region Public Properties
+
         public List<GameObject> MazeObjects => mazeObjects;
+
+        #endregion
 
         #region Unity Callbacks
 
