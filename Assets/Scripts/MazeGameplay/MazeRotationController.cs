@@ -3,52 +3,73 @@ using UnityEngine;
 namespace MazeGameplay
 {
     public class MazeRotationController : MonoBehaviour
+
     {
-        #region Serialized Fields
+        private float firstPoint;
+        private float secondPoint;
 
-        [SerializeField]
-        private float rotationPower;
-        [SerializeField]
-        private float rotationSpeed;
+        private int inc = 0;
 
-        #endregion
-
-        #region Private Fields
-
-        private float angleY;
-        private float angleX;
-        private Touch screenTouch;
-        private Vector2 input;
-
-        #endregion
-
-        #region Unity Callbacks
-
-        private void Update()
+        void Update()
         {
-            if (Input.touchCount > 0)
+
+            if (Input.touchCount == 0)
             {
-                screenTouch = Input.GetTouch(0);
-                input = screenTouch.deltaPosition;
-                RotateMaze();
+                inc = 0;
+
+                return;
+            }
+
+            if (Input.touchCount == 1)
+            {
+                if (inc == 0)
+                {
+                    firstPoint = (int) Input.GetTouch(0).position.x;
+                    secondPoint = (int) Input.GetTouch(0).position.x;
+                }
+
+                inc++;
+
+                if (inc <= 10)
+                {
+                    return;
+                }
+
+                secondPoint = (int) Input.GetTouch(0).position.x;
+
+                if (firstPoint < secondPoint)
+                {
+                    Rotate(false);
+                }
+                else if (firstPoint > secondPoint)
+                {
+                    Rotate(true);
+                }
             }
         }
 
-        #endregion
 
-        #region Private Methods
-
-        private void RotateMaze()
+        private void LateUpdate()
         {
-            angleY += input.x * rotationPower * Time.deltaTime;
-            angleY = Mathf.Clamp(angleY, -90.0f, 90.0f);
-
-            angleX += input.y * rotationPower * Time.deltaTime;
-            angleX = Mathf.Clamp(angleX, -45.0f, 45.0f);
-
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(-angleX, -angleY, 0.0f), Time.deltaTime * rotationSpeed);
+            if (inc >= 10)
+            {
+                firstPoint = (int) Input.GetTouch(0).position.x;
+            }
         }
 
-        #endregion
+        void Rotate(bool rightRotation)
+        {
+
+            //Debug.Log(m_right);
+
+            if (rightRotation)
+            {
+                transform.Rotate(Vector3.forward * Time.deltaTime * 80f);
+            }
+            else
+            {
+                transform.Rotate(Vector3.back * Time.deltaTime * 80f);
+            }
+        }
     }
 }
