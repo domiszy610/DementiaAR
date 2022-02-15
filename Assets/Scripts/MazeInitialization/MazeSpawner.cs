@@ -27,7 +27,7 @@ namespace MazeInitialization
 
         #region Private Fields
 
-        private Vector3 mazePosition = new Vector3(0.5f, 0.5f, 0f);
+        private Vector3 mazePosition = new Vector3(0.5f, 0.75f, 0f);
 
         private ARRaycastManager arRaycastManager;
 

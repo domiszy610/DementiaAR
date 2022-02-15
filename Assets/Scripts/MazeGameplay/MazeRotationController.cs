@@ -59,9 +59,6 @@ namespace MazeGameplay
 
         void Rotate(bool rightRotation)
         {
-
-            //Debug.Log(m_right);
-
             if (rightRotation)
             {
                 transform.Rotate(Vector3.forward * Time.deltaTime * 80f);

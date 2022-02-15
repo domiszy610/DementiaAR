@@ -233,6 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9210855411657817574}
+  - component: {fileID: 3442861732746611727}
   m_Layer: 0
   m_Name: MazeLevel0
   m_TagString: Untagged
@@ -256,6 +257,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3442861732746611727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961550913494176329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb9789f372edc54ca65d6d6f9b5ce24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScale: 0.1
+  maxScale: 2
 --- !u!1 &1610138346193302846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,8 +1253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d60a36201a88a428ef4d7e826124b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationPower: 2
-  rotationSpeed: 10
 --- !u!1001 &808130608844376330
 PrefabInstance:
   m_ObjectHideFlags: 0

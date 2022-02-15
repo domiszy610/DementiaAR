@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.18386823, g: 0.22901532, b: 0.3031121, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -676,8 +676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 0}
-  m_DetectionMode: 2
+  m_PlanePrefab: {fileID: 1232431903}
+  m_DetectionMode: 1
 --- !u!114 &571191293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,13 +809,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572441056}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &623498479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953287048}
   m_LocalRotation: {x: 0.19297077, y: -0, z: -0, w: 0.98120457}
-  m_LocalPosition: {x: 0, y: 6.97, z: -16}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 571191294}
@@ -1612,8 +1612,8 @@ GameObject:
   - component: {fileID: 1232431906}
   - component: {fileID: 1232431905}
   - component: {fileID: 1232431904}
-  m_Layer: 0
-  m_Name: AR Default Plane
+  m_Layer: 6
+  m_Name: AR Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1682,8 +1682,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 0.9433962, g: 0.93894625, b: 0.93894625, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1736,7 +1736,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1a110d32af21aa4d872c707dfcc6043, type: 2}
+  - {fileID: 2100000, guid: 191104d1c65f388478b34ed75ddea17b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2280,6 +2280,9 @@ MonoBehaviour:
   - {fileID: 961550913494176329, guid: bdc5582570305d64fa01466d07149d3d, type: 3}
   - {fileID: 4969628002835926041, guid: 4db6f045d7dfff6488ecab2cf3c827ca, type: 3}
   - {fileID: 5466138159718151087, guid: 06d349742943e2348baeb5f5286a778c, type: 3}
+  - {fileID: 2116540651535698682, guid: 8a31f85f0d9540643a42f7cd9503dc02, type: 3}
+  - {fileID: 5037670626200274236, guid: 6141d54467c7e4c4b80529c7f7c8eae9, type: 3}
+  - {fileID: 3661398929142278249, guid: 682f117720eb9ef48afea3a314731998, type: 3}
   mazePosition: {x: -100, y: -100, z: 100}
   sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
 --- !u!1 &1892993762
