@@ -37,7 +37,7 @@ namespace UI
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                GoBackLevelSelection();
+                GoBackToLevelSelection();
             }
         }
 
@@ -45,7 +45,7 @@ namespace UI
 
         #region Public Methods
 
-        public void GoBackLevelSelection()
+        public void GoBackToLevelSelection()
         {
             SceneManager.LoadScene(sceneLoaderContainer.MazeLevelSelectionPath);
         }
