@@ -18,8 +18,12 @@ namespace MazeGameplay
         private PanelChannel panelChannel;
 
         #endregion
-        
+
+        #region Private Fields
+
         private int currentLevel;
+
+        #endregion
 
         #region Unity Callbacks
 
