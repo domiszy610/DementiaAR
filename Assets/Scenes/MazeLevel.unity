@@ -240,8 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
   panelChannel: {fileID: 11400000, guid: 55406210be681f543a601bc7a3fb6769, type: 2}
-  winPanel: {fileID: 0}
-  endPanel: {fileID: 0}
+  winPanel: {fileID: 682951051}
+  endPanel: {fileID: 1981612961}
 --- !u!1 &532911705
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,8 +451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeConstructor: {fileID: 1854624050}
-  instructionPanel: {fileID: 0}
-  dismissButton: {fileID: 0}
+  instructionPanel: {fileID: 1645471260}
+  dismissButton: {fileID: 532911707}
   arCamera: {fileID: 953287049}
   sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
 --- !u!1 &572441056
@@ -565,7 +565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &682951052
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1724,7 +1724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1645471261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2185,7 +2185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1981612962
 RectTransform:
   m_ObjectHideFlags: 0
