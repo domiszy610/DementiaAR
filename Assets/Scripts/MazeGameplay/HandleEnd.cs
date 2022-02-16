@@ -36,25 +36,25 @@ namespace MazeGameplay
 
         private IEnumerator Win()
         {
-            panelChannel.IsWinPanelActive = true;
             int currentLevel = sceneLoaderContainer.CurrentLevelIndex;
-
-            yield return new WaitForSeconds(winEffectTime);
-
-            panelChannel.IsWinPanelActive = false;
-
-            if (sceneLoaderContainer.LevelCount == sceneLoaderContainer.CurrentLevelIndex)
+            
+            if (sceneLoaderContainer.LevelCount == currentLevel)
             {
                 EndGame();
 
                 yield break;
             }
+            panelChannel.IsWinPanelActive = true;
+            
+            yield return new WaitForSeconds(winEffectTime);
 
+            panelChannel.IsWinPanelActive = false;
+            
             sceneLoaderContainer.CurrentLevelIndex = currentLevel + 1;
 
-            if (sceneLoaderContainer.UnlockedLevelIndex < sceneLoaderContainer.CurrentLevelIndex)
+            if (sceneLoaderContainer.UnlockedLevelIndex < currentLevel)
             {
-                sceneLoaderContainer.UnlockedLevelIndex = sceneLoaderContainer.CurrentLevelIndex;
+                sceneLoaderContainer.UnlockedLevelIndex = currentLevel;
             }
         }
 
