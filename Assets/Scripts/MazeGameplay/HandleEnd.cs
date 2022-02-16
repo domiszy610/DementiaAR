@@ -44,7 +44,7 @@ namespace MazeGameplay
         {
             currentLevel = sceneLoaderContainer.CurrentLevelIndex;
 
-            if (sceneLoaderContainer.LevelCount == currentLevel)
+            if (sceneLoaderContainer.LevelCount == currentLevel+1)
             {
                 EndGame();
 
@@ -59,9 +59,9 @@ namespace MazeGameplay
 
             sceneLoaderContainer.CurrentLevelIndex = currentLevel + 1;
 
-            if (sceneLoaderContainer.UnlockedLevelIndex < currentLevel)
+            if (sceneLoaderContainer.UnlockedLevelIndex < sceneLoaderContainer.CurrentLevelIndex)
             {
-                sceneLoaderContainer.UnlockedLevelIndex = currentLevel;
+                sceneLoaderContainer.UnlockedLevelIndex = sceneLoaderContainer.CurrentLevelIndex;
             }
         }
 
