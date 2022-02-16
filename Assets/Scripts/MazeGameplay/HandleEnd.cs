@@ -18,6 +18,8 @@ namespace MazeGameplay
         private PanelChannel panelChannel;
 
         #endregion
+        
+        private int currentLevel;
 
         #region Unity Callbacks
 
@@ -36,7 +38,7 @@ namespace MazeGameplay
 
         private IEnumerator Win()
         {
-            int currentLevel = sceneLoaderContainer.CurrentLevelIndex;
+            currentLevel = sceneLoaderContainer.CurrentLevelIndex;
 
             if (sceneLoaderContainer.LevelCount == currentLevel)
             {
@@ -62,6 +64,7 @@ namespace MazeGameplay
         private void EndGame()
         {
             panelChannel.IsEndPanelActive = true;
+            sceneLoaderContainer.UnlockedLevelIndex = currentLevel;
         }
 
         #endregion
