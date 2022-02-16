@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15913ad8941ff1544b121cead06028fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winEffectTime: 5
+  winEffectTime: 3
   sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
   panelChannel: {fileID: 11400000, guid: 55406210be681f543a601bc7a3fb6769, type: 2}
 --- !u!54 &826838868893738064
