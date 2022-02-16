@@ -63,7 +63,5 @@ namespace UI.ScriptableObjects
         public int LevelCount { get => levelCount; set => levelCount = value; }
 
         #endregion
-
-        //public event Action OnModifiedUnlockedLevel;
     }
 }

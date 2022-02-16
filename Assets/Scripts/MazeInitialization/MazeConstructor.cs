@@ -50,8 +50,6 @@ namespace MazeInitialization
                 newMaze.SetActive(false);
                 mazeObjects.Add(newMaze);
             }
-
-            sceneLoaderContainer.LevelCount = mazeObjects.Count - 1;
         }
 
         #endregion
