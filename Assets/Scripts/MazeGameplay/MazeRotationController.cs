@@ -5,14 +5,19 @@ namespace MazeGameplay
     public class MazeRotationController : MonoBehaviour
 
     {
+        #region Private Fields
+
         private float firstPoint;
         private float secondPoint;
 
-        private int inc = 0;
+        private int inc;
 
-        void Update()
+        #endregion
+
+        #region Unity Callbacks
+
+        private void Update()
         {
-
             if (Input.touchCount == 0)
             {
                 inc = 0;
@@ -48,7 +53,6 @@ namespace MazeGameplay
             }
         }
 
-
         private void LateUpdate()
         {
             if (inc >= 10)
@@ -57,7 +61,11 @@ namespace MazeGameplay
             }
         }
 
-        void Rotate(bool rightRotation)
+        #endregion
+
+        #region Private Methods
+
+        private void Rotate(bool rightRotation)
         {
             if (rightRotation)
             {
@@ -68,5 +76,7 @@ namespace MazeGameplay
                 transform.Rotate(Vector3.back * Time.deltaTime * 80f);
             }
         }
+
+        #endregion
     }
 }

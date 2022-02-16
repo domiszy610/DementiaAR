@@ -37,19 +37,20 @@ namespace MazeGameplay
         private IEnumerator Win()
         {
             int currentLevel = sceneLoaderContainer.CurrentLevelIndex;
-            
+
             if (sceneLoaderContainer.LevelCount == currentLevel)
             {
                 EndGame();
 
                 yield break;
             }
+
             panelChannel.IsWinPanelActive = true;
-            
+
             yield return new WaitForSeconds(winEffectTime);
 
             panelChannel.IsWinPanelActive = false;
-            
+
             sceneLoaderContainer.CurrentLevelIndex = currentLevel + 1;
 
             if (sceneLoaderContainer.UnlockedLevelIndex < currentLevel)
