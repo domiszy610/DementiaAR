@@ -1491,8 +1491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb9789f372edc54ca65d6d6f9b5ce24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minScale: 0.1
   maxScale: 2
+  minScale: 0.1
 --- !u!1 &5720742748796146480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,7 +3230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2411926204900760777, guid: 1773c81d4694fec4f8a057e20d3f4f1e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.103
+      value: -0.121
       objectReference: {fileID: 0}
     - target: {fileID: 2411926204900760777, guid: 1773c81d4694fec4f8a057e20d3f4f1e, type: 3}
       propertyPath: m_LocalRotation.w
