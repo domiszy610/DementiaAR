@@ -27,7 +27,7 @@ namespace MazeGameplay
         {
             if (mazeObject)
             {
-                mazeObject.transform.rotation = Quaternion.LookRotation(transform.position - arCamera.transform.position);
+                mazeObject.transform.rotation = Quaternion.LookRotation(transform.position - arCamera.transform.position, Vector3.left);
             }
         }
         private void GetMazeObject()
