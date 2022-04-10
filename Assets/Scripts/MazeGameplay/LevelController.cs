@@ -8,24 +8,39 @@ namespace MazeGameplay
 {
     public class LevelController : MonoBehaviour
     {
-        [SerializeField]
-        private MazeConstructor mazeConstructor;
-        [SerializeField]
-        private SceneLoaderContainer sceneLoaderContainer;
-        
         #region Events
 
         public event Action OnChangedMazeLevel;
 
         #endregion
-        
+
+        #region Serialized Fields
+
+        [SerializeField]
+        private MazeConstructor mazeConstructor;
+        [SerializeField]
+        private SceneLoaderContainer sceneLoaderContainer;
+
+        #endregion
+
+        #region Private Fields
+
         private GameObject mazeObject;
         private int currentIndex;
         private List<GameObject> mazeObjects;
-        
+
+        #endregion
+
+        #region Public Properties
+
         public GameObject MazeObject => mazeObject;
 
         public int CurrentIndex => currentIndex;
+
+        #endregion
+
+        #region Unity Callbacks
+
         private void Start()
         {
             mazeObjects = mazeConstructor.MazeObjects;
@@ -33,10 +48,16 @@ namespace MazeGameplay
             GetMazeObject(currentIndex);
             sceneLoaderContainer.OnModifiedCurrentLevel += NextGameObject;
         }
+
         private void OnDisable()
         {
             sceneLoaderContainer.OnModifiedCurrentLevel -= NextGameObject;
         }
+
+        #endregion
+
+        #region Private Methods
+
         private void GetMazeObject(int index)
         {
             mazeObject = mazeObjects[index];
@@ -53,6 +74,6 @@ namespace MazeGameplay
 
         private int GetCurrentLevelIndex() => sceneLoaderContainer.CurrentLevelIndex;
 
-        
+        #endregion
     }
 }

@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using MazeGameplay;
-using UI.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
@@ -12,7 +11,7 @@ namespace MazeInitialization
     public class MazeSpawner : MonoBehaviour
     {
         #region Serialized Fields
-        
+
         [SerializeField]
         private GameObject instructionPanel;
         [SerializeField]
@@ -21,7 +20,6 @@ namespace MazeInitialization
         private Camera arCamera;
         [SerializeField]
         private LevelController levelController;
-        
 
         #endregion
 
@@ -36,7 +34,6 @@ namespace MazeInitialization
         private GameObject mazeObject;
 
         private int currentIndex;
-        
 
         #endregion
 
@@ -85,7 +82,7 @@ namespace MazeInitialization
         {
             mazeObject = levelController.MazeObject;
         }
-        
+
         private void Dismiss()
         {
             instructionPanel.SetActive(false);
