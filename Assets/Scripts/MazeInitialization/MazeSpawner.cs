@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MazeGameplay;
 using UI.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,9 +12,7 @@ namespace MazeInitialization
     public class MazeSpawner : MonoBehaviour
     {
         #region Serialized Fields
-
-        [SerializeField]
-        private MazeConstructor mazeConstructor;
+        
         [SerializeField]
         private GameObject instructionPanel;
         [SerializeField]
@@ -21,7 +20,8 @@ namespace MazeInitialization
         [SerializeField]
         private Camera arCamera;
         [SerializeField]
-        private SceneLoaderContainer sceneLoaderContainer;
+        private LevelController levelController;
+        
 
         #endregion
 
@@ -36,8 +36,7 @@ namespace MazeInitialization
         private GameObject mazeObject;
 
         private int currentIndex;
-
-        private List<GameObject> mazeObjects;
+        
 
         #endregion
 
@@ -50,7 +49,6 @@ namespace MazeInitialization
 
         private void Start()
         {
-            mazeObjects = mazeConstructor.MazeObjects;
             currentIndex = GetCurrentLevelIndex();
 
             if (currentIndex == 0)
@@ -59,29 +57,23 @@ namespace MazeInitialization
                 dismissButton.onClick.AddListener(Dismiss);
             }
 
-            GetMazeObject(currentIndex);
-            sceneLoaderContainer.OnModifiedCurrentLevel += NextGameObject;
+            GetMazeObject();
+            levelController.OnChangedMazeLevel += GetMazeObject;
         }
 
         private void OnDisable()
         {
-            sceneLoaderContainer.OnModifiedCurrentLevel -= NextGameObject;
+            levelController.OnChangedMazeLevel -= GetMazeObject;
         }
 
         private void Update()
         {
-            if (mazeObject)
+            if (mazeObject && Input.touchCount <= 0)
             {
-                if (Input.touchCount <= 0)
+                if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
                 {
-                    if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
-                    {
-                        MoveMazeObject();
-                    }
+                    MoveMazeObject();
                 }
-                
-                mazeObject.transform.LookAt(arCamera.transform, Vector3.left);
-              
             }
         }
 
@@ -89,19 +81,11 @@ namespace MazeInitialization
 
         #region Private Methods
 
-        private void GetMazeObject(int index)
+        private void GetMazeObject()
         {
-            mazeObject = mazeObjects[index];
-            mazeObject.SetActive(true);
+            mazeObject = levelController.MazeObject;
         }
-
-        private void NextGameObject()
-        {
-            Destroy(mazeObject);
-            currentIndex = GetCurrentLevelIndex();
-            GetMazeObject(currentIndex);
-        }
-
+        
         private void Dismiss()
         {
             instructionPanel.SetActive(false);
@@ -113,7 +97,7 @@ namespace MazeInitialization
             mazeObject.transform.position = hitPose.position;
         }
 
-        private int GetCurrentLevelIndex() => sceneLoaderContainer.CurrentLevelIndex;
+        private int GetCurrentLevelIndex() => levelController.CurrentIndex;
 
         #endregion
     }
