@@ -73,7 +73,7 @@ public static class MazeGenerator
         var positionStack = new Stack<Position>();
         var position = new Position { X = rng.Next(0, width), Y = rng.Next(0, height) };
 
-        maze[position.X, position.Y] |= WallState.VISITED;
+        maze[position.X, position.Y] |= WallState.VISITED; 
         positionStack.Push(position);
 
         while (positionStack.Count > 0)
