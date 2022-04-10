@@ -70,12 +70,18 @@ namespace MazeInitialization
 
         private void Update()
         {
-            if (mazeObject && Input.touchCount <= 0)
+            if (mazeObject)
             {
-                if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
+                if (Input.touchCount <= 0)
                 {
-                    MoveMazeObject();
+                    if (arRaycastManager.Raycast(arCamera.ViewportPointToRay(mazePosition), raycastHits, TrackableType.PlaneWithinPolygon))
+                    {
+                        MoveMazeObject();
+                    }
                 }
+                
+                mazeObject.transform.LookAt(arCamera.transform, Vector3.left);
+              
             }
         }
 
