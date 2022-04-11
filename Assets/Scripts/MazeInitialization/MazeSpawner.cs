@@ -80,7 +80,7 @@ namespace MazeInitialization
                     }
                 }
                 
-                mazeObject.transform.LookAt(arCamera.transform, Vector3.left);
+                mazeObject.transform.rotation = Quaternion.LookRotation(mazeObject.transform.position - arCamera.transform.position);
               
             }
         }
