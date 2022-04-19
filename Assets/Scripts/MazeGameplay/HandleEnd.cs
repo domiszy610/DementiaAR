@@ -67,8 +67,14 @@ namespace MazeGameplay
 
         private void EndGame()
         {
+            DisableMaze();
             panelChannel.IsEndPanelActive = true;
             sceneLoaderContainer.UnlockedLevelIndex = currentLevel;
+        }
+
+        private void DisableMaze()
+        {
+            this.transform.parent.parent.gameObject.SetActive(false);
         }
 
         #endregion
