@@ -1,3 +1,4 @@
+using UI.Enums;
 using UnityEngine;
 
 namespace UI.ScriptableObjects
@@ -7,10 +8,13 @@ namespace UI.ScriptableObjects
     {
         public RotationDirection rotationStatus;
 
+        #region Unity Callbacks
+
         private void Awake()
         {
             rotationStatus = RotationDirection.None;
         }
 
+        #endregion
     }
 }

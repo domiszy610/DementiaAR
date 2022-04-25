@@ -44,7 +44,7 @@ namespace MazeGameplay
         {
             currentLevel = sceneLoaderContainer.CurrentLevelIndex;
 
-            if (sceneLoaderContainer.LevelCount == currentLevel+1)
+            if (sceneLoaderContainer.LevelCount == currentLevel + 1)
             {
                 EndGame();
 
@@ -74,7 +74,7 @@ namespace MazeGameplay
 
         private void DisableMaze()
         {
-            this.transform.parent.parent.gameObject.SetActive(false);
+            transform.parent.parent.gameObject.SetActive(false);
         }
 
         #endregion

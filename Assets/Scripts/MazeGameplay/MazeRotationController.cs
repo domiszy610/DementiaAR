@@ -1,4 +1,4 @@
-using UI;
+using UI.Enums;
 using UI.ScriptableObjects;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ namespace MazeGameplay
 {
     public class MazeRotationController : MonoBehaviour
     {
-        #region Private Fields
+        #region Serialized Fields
 
         [SerializeField]
         private MazeRotationChannel mazeRotationChannel;
@@ -14,7 +14,6 @@ namespace MazeGameplay
         #endregion
 
         #region Unity Callbacks
-        
 
         private void Update()
         {
@@ -22,21 +21,22 @@ namespace MazeGameplay
             {
                 RotateLeft();
             }
+
             if (mazeRotationChannel.rotationStatus == RotationDirection.Right)
             {
                 RotateRight();
             }
         }
-        
+
         #endregion
-        
 
         #region Private Methods
-        
+
         private void RotateLeft()
         {
             Rotate(false);
         }
+
         private void RotateRight()
         {
             Rotate(true);
