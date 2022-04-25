@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb9789f372edc54ca65d6d6f9b5ce24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minScale: 0.1
   maxScale: 2
+  minScale: 0.1
 --- !u!1 &1610138346193302846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,6 +1253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d60a36201a88a428ef4d7e826124b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mazeRotationChannel: {fileID: 11400000, guid: 69c843c5546ca0f46b807afda6fd31fa, type: 2}
 --- !u!1001 &808130608844376330
 PrefabInstance:
   m_ObjectHideFlags: 0
