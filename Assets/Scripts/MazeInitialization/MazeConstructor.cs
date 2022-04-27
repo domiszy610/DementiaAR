@@ -12,8 +12,7 @@ namespace MazeInitialization
         private List<GameObject> mazePrefabs;
         [SerializeField]
         private Vector3 mazePosition;
-        [SerializeField]
-        private SceneLoaderContainer sceneLoaderContainer;
+        
 
         #endregion
 
