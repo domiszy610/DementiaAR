@@ -16,23 +16,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ARPlanes/ARFeatheredPlaneMeshVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScriptableObjects/PanelChannel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeInitialization/MazeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScriptableObjects/MazeRotationChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenuPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MazeLevelSelectCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Enums/RotationDirection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RotationButtonsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeInitialization/MazeSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGameplay/MazeScalingController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MazeLevelCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScriptableObjects/SceneLoaderContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGameplay/MazeRotationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ARPlanes/FadePlaneOnBoundaryChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGameplay/MazeRotationController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGenerator/MazeRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeInitialization/MazeConstructor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeGameplay/HandleEnd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenuPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MazeLevelSelectCanvas.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="24cWp4ddGm2z7DwQrOXxa6E5sYT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -113,7 +118,19 @@
       <workItem from="1644948112772" duration="4740000" />
       <workItem from="1644974272769" duration="1217000" />
       <workItem from="1644990296695" duration="2394000" />
-      <workItem from="1644995224510" duration="12207000" />
+      <workItem from="1644995224510" duration="12816000" />
+      <workItem from="1649607510017" duration="1016000" />
+      <workItem from="1649610199527" duration="1650000" />
+      <workItem from="1649624650509" duration="6392000" />
+      <workItem from="1649635949431" duration="929000" />
+      <workItem from="1650389819222" duration="5345000" />
+      <workItem from="1650479322358" duration="5727000" />
+      <workItem from="1650490619973" duration="1049000" />
+      <workItem from="1650912424397" duration="1129000" />
+      <workItem from="1650919547004" duration="4813000" />
+      <workItem from="1650928926152" duration="1389000" />
+      <workItem from="1651020151871" duration="593000" />
+      <workItem from="1651083702875" duration="13521000" />
     </task>
     <servers />
   </component>
