@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 215095360}
   - component: {fileID: 215095364}
   - component: {fileID: 215095365}
+  - component: {fileID: 215095366}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -395,6 +396,20 @@ MonoBehaviour:
   mazeRotationChannel: {fileID: 11400000, guid: 69c843c5546ca0f46b807afda6fd31fa, type: 2}
   leftRotationButton: {fileID: 987008022}
   rightRotationButton: {fileID: 1931803299}
+--- !u!114 &215095366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215095359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b563dad326a5e041af7471c0822218d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
+  levelInfoText: {fileID: 1008348479}
 --- !u!1 &361731973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,8 +1153,8 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
+  m_Antialiasing: 2
+  m_AntialiasingQuality: 1
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
