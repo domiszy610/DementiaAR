@@ -1,5 +1,5 @@
 using System.Collections;
-using UI.ScriptableObjects;
+using ScriptableObjects;
 using UnityEngine;
 
 namespace MazeGameplay

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UI.ScriptableObjects
+namespace ScriptableObjects
 {
     [CreateAssetMenu(menuName = "PanelChannel", fileName = "PanelChannel")]
     public class PanelChannel : ScriptableObject

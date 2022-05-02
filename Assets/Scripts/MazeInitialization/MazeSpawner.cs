@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using UI.ScriptableObjects;
+using ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;

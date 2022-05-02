@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UI.ScriptableObjects
+namespace ScriptableObjects
 {
     [CreateAssetMenu(menuName = "SceneContainer", fileName = "SceneLoaderContainer")]
     public class SceneLoaderContainer : ScriptableObject
@@ -22,6 +22,9 @@ namespace UI.ScriptableObjects
 
         [SerializeField]
         private string mazeLevelSelectionPath;
+        
+        [SerializeField]
+        private string instructionPath;
 
         [SerializeField]
         private int levelCount;
@@ -41,6 +44,8 @@ namespace UI.ScriptableObjects
         public string LevelScenePath => levelScenePath;
         public string MainMenuPath => mainMenuPath;
         public string MazeLevelSelectionPath => mazeLevelSelectionPath;
+        
+        public string InstructionPath => instructionPath;
 
         public int CurrentLevelIndex {
             get => currentLevelIndex;

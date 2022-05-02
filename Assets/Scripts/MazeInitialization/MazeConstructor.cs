@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UI.ScriptableObjects;
 using UnityEngine;
 
 namespace MazeInitialization

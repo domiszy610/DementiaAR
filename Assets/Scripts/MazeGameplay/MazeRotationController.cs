@@ -1,5 +1,5 @@
-using UI.Enums;
-using UI.ScriptableObjects;
+using Enums;
+using ScriptableObjects;
 using UnityEngine;
 
 namespace MazeGameplay

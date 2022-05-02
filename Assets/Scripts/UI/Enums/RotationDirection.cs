@@ -1,4 +1,4 @@
-namespace UI.Enums
+namespace Enums
 {
     public enum RotationDirection
     {

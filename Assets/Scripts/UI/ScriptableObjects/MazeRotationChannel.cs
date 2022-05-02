@@ -1,7 +1,7 @@
-using UI.Enums;
+using Enums;
 using UnityEngine;
 
-namespace UI.ScriptableObjects
+namespace ScriptableObjects
 {
     [CreateAssetMenu(menuName = "MazeRotationChannel", fileName = "MazeRotationChannel")]
     public class MazeRotationChannel : ScriptableObject
