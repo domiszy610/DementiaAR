@@ -466,14 +466,14 @@ RectTransform:
   m_GameObject: {fileID: 649276763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.7303, y: 1.7303, z: 0.86515}
   m_Children: []
   m_Father: {fileID: 1875898889}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -104, y: 120}
+  m_AnchoredPosition: {x: -60, y: 120}
   m_SizeDelta: {x: 100, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649276765
@@ -842,21 +842,20 @@ MonoBehaviour:
     na p\u0142aszczy\u017Anie rozszerzonej rzeczywisto\u015Bci w taki spos\xF3b,
     aby znajduj\u0105ca si\u0119 w nim kulka wpad\u0142a do otworu.\r\n\r\n\r\n<b>Rozpocz\u0119cie
     rozgrywki</b>\r\n\r\nAby rozpocz\u0105\u0107 gr\u0119 nale\u017Cy wybra\u0107
-    w menu wyboru poziomu odpowiedni poziom z poziom\xF3w odblokowanych. Na pocz\u0105tku
-    b\u0119dzie to tylko poziom numer 1.  \r\n\r\n\r\n<b>Umieszczenie labiryntu w
-    rozszerzonej rzeczywisto\u015Bci</b>\r\n\r\nAby umie\u015Bci\u0107 labirynt na
-    p\u0142aszczy\u017Anie w rozszerzonej rzeczywisto\u015Bci nale\u017Cy skierowa\u0107
-    kamer\u0119 urz\u0105dzenia tak, aby \u015Brodek ekranu wskazywa\u0142 na wybran\u0105
-    przez gracza p\u0142aszczyzn\u0119 rozszerzonej rzeczywisto\u015Bci. P\u0142aszczyzny
-    rozszerzonej rzeczywisto\u015Bci pojawi\u0105 si\u0119 na ekranie jako wykropkowane
-    powierzchnie.\r\n\r\n\r\n<b>Sterowanie labiryntem</b>\r\n\r\nAby obr\xF3ci\u0107
-    labirynt i pozwoli\u0107 kulce si\u0119 toczy\u0107 nale\u017Cy skorzysta\u0107
-    z przycisk\xF3w znajduj\u0105cych si\u0119 u do\u0142u ekranu, kt\xF3re pozwalaj\u0105
-    na obr\xF3t labiryntem w prawo, b\u0105d\u017A lewo. Tylko jeden przycisk powinien
-    by\u0107 wci\u015Bni\u0119ty w danej chwili.\r\n\r\n\r\n<b>Skalowanie labiryntu</b>\r\n\r\nAby
-    zmniejszy\u0107 labirynt nale\u017Cy przybli\u017Cy\u0107 do siebie dwa palce
-    na ekranie, natomiast aby powi\u0119kszy\u0107 labirynt nale\u017Cy je od siebie
-    odsun\u0105\u0107.\r\n"
+    w\_menu wyboru poziomu odpowiedni poziom z poziom\xF3w odblokowanych. Na pocz\u0105tku
+    b\u0119dzie to tylko poziom numer 1.  \r\n\r\n\r\n<b>Umieszczenie labiryntu w\_rozszerzonej
+    rzeczywisto\u015Bci</b>\r\n\r\nAby umie\u015Bci\u0107 labirynt na p\u0142aszczy\u017Anie
+    w rozszerzonej rzeczywisto\u015Bci nale\u017Cy skierowa\u0107 kamer\u0119 urz\u0105dzenia
+    tak, aby \u015Brodek ekranu wskazywa\u0142 na wybran\u0105 przez gracza p\u0142aszczyzn\u0119
+    rozszerzonej rzeczywisto\u015Bci. P\u0142aszczyzny rozszerzonej rzeczywisto\u015Bci
+    pojawi\u0105 si\u0119 na ekranie jako wykropkowane powierzchnie.\r\n\r\n\r\n<b>Sterowanie
+    labiryntem</b>\r\n\r\nAby obr\xF3ci\u0107 labirynt i pozwoli\u0107 kulce si\u0119
+    toczy\u0107 nale\u017Cy skorzysta\u0107 z\_przycisk\xF3w znajduj\u0105cych si\u0119
+    u do\u0142u ekranu, kt\xF3re pozwalaj\u0105 na obr\xF3t labiryntem w prawo, b\u0105d\u017A
+    lewo. Tylko jeden przycisk powinien by\u0107 wci\u015Bni\u0119ty w danej chwili.\r\n\r\n\r\n<b>Skalowanie
+    labiryntu</b>\r\n\r\nAby zmniejszy\u0107 labirynt nale\u017Cy przybli\u017Cy\u0107
+    do siebie dwa palce na\_ekranie, natomiast aby powi\u0119kszy\u0107 labirynt
+    nale\u017Cy je od siebie odsun\u0105\u0107.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 4631573fac26a364d944d7e51002c67a, type: 2}
@@ -865,8 +864,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4282272603
+  m_fontColor: {r: 0.3584906, g: 0.29226762, b: 0.24181205, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
