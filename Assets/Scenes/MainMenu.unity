@@ -1419,8 +1419,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1716758852}
-        m_TargetAssemblyTypeName: UI.MainMenuPanel, Assembly-CSharp
-        m_MethodName: PlayMazeGame
+        m_TargetAssemblyTypeName: MainMenuPanel, Assembly-CSharp
+        m_MethodName: ReadInstruction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

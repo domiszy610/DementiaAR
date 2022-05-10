@@ -29,6 +29,11 @@ public class MainMenuPanel : MonoBehaviour
     {
         SceneManager.LoadScene(sceneLoaderContainer.MazeLevelSelectionPath);
     }
+    
+    public void ReadInstruction()
+    {
+        SceneManager.LoadScene(sceneLoaderContainer.InstructionPath);
+    }
 
     public void QuitGame()
     {
