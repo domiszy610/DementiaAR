@@ -249,14 +249,14 @@ MonoBehaviour:
   m_text: "Wyb\xF3r Poziomu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2608882469734816079, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: c788006a4e01c70459f86e9a1b2d1e5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4282469984
+  m_fontColor: {r: 0.3764706, g: 0.30588236, b: 0.25490198, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -3
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -389,8 +389,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -523,8 +523,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -778,8 +778,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1791,8 +1791,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1925,8 +1925,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2604,14 +2604,14 @@ MonoBehaviour:
   m_text: "Powr\xF3t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2608882469734816079, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d3c90156943e5174c98a55cc3b37ba90, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2744,8 +2744,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283128688
-  m_fontColor: {r: 0.4392157, g: 0.35686275, b: 0.29411766, a: 1}
+    rgba: 4294440699
+  m_fontColor: {r: 0.9843137, g: 0.9647059, b: 0.96862745, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
