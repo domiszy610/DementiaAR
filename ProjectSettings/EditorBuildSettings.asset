@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MazeLevelSelection.unity
     guid: 70a252089b0a3cd46a9ead1765d272da
   - enabled: 1
+    path: Assets/Scenes/InstructionScene.unity
+    guid: b6d793b8b3b6e214e89f274011ec14bc
+  - enabled: 1
     path: Assets/Scenes/MazeLevel.unity
     guid: 4ee2aecd43e56f745a589cbe47a85916
   m_configObjects:
