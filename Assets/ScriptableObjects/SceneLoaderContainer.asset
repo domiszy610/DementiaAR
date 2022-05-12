@@ -16,4 +16,4 @@ MonoBehaviour:
   mainMenuPath: Assets/Scenes/MainMenu.unity
   mazeLevelSelectionPath: Assets/Scenes/MazeLevelSelection.unity
   instructionPath: Assets/Scenes/InstructionScene.unity
-  levelCount: 6
+  levelCount: 11
