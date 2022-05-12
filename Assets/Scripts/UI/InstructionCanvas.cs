@@ -13,13 +13,7 @@ public class InstructionCanvas : MonoBehaviour
     private SceneLoaderContainer sceneLoaderContainer;
 
     #endregion
-
-    #region Private Fields
-
-    private List<Button> levelSelectionButtons;
-
-    #endregion
-
+    
     #region Unity Callbacks
 
     private void Update()
