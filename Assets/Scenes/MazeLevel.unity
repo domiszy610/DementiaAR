@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18386823, g: 0.22901532, b: 0.3031121, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731725, g: 0.13414745, b: 0.12107873, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_text: ZAMKNIJ
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2608882469734816079, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: c788006a4e01c70459f86e9a1b2d1e5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -358,7 +358,7 @@ RectTransform:
   - {fileID: 1931803298}
   - {fileID: 1008348478}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_text: ZAMKNIJ
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: d3c90156943e5174c98a55cc3b37ba90, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: c788006a4e01c70459f86e9a1b2d1e5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -738,7 +738,7 @@ Transform:
   m_Children:
   - {fileID: 953287054}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &571191295
 MonoBehaviour:
@@ -795,7 +795,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.5
+    m_Strength: 0.4
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -843,13 +843,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572441056}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 953287054}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582523114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1110,7 @@ MonoBehaviour:
     do otworu. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2608882469734816079, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 546ffeb5131c81c4cbb111538c765c3d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1337,6 +1337,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 582523115}
+  - {fileID: 572441058}
   m_Father: {fileID: 571191294}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1700,7 +1701,7 @@ MonoBehaviour:
   m_text: "Gratulacje!\n\nUko\u0144czono wszystkie poziomy!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 546ffeb5131c81c4cbb111538c765c3d, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: c788006a4e01c70459f86e9a1b2d1e5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1955,7 +1956,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1645471260
 GameObject:
@@ -2091,7 +2092,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1854624048
 GameObject:
@@ -2122,7 +2123,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1854624050
 MonoBehaviour:
@@ -2143,6 +2144,11 @@ MonoBehaviour:
   - {fileID: 2116540651535698682, guid: 8a31f85f0d9540643a42f7cd9503dc02, type: 3}
   - {fileID: 5037670626200274236, guid: 6141d54467c7e4c4b80529c7f7c8eae9, type: 3}
   - {fileID: 3661398929142278249, guid: 682f117720eb9ef48afea3a314731998, type: 3}
+  - {fileID: 1168959976814244983, guid: c8836e9c07bbe564a9967f6ce58f2a19, type: 3}
+  - {fileID: 6152558401984180473, guid: da960692362b6fe42bb29a8bbf39db7a, type: 3}
+  - {fileID: 7866167707992094989, guid: 14d3767e9b4bbb14aadf0c6ad705802f, type: 3}
+  - {fileID: 7816412836705504184, guid: f82443cd48144e846847b23dc7644af0, type: 3}
+  - {fileID: 7651168044343745258, guid: 52a68f9e26054074cb9900166c4f1e5a, type: 3}
   mazePosition: {x: -100, y: -100, z: 100}
 --- !u!1 &1901351848
 GameObject:
@@ -2337,7 +2343,7 @@ MonoBehaviour:
   m_text: "Gratulacje!\n\nPrzechodzisz do nast\u0119pnego poziomu!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 546ffeb5131c81c4cbb111538c765c3d, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: c788006a4e01c70459f86e9a1b2d1e5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
