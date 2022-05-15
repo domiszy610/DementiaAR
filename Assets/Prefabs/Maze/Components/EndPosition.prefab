@@ -94,7 +94,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.56
   m_Height: 1000
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15913ad8941ff1544b121cead06028fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winEffectTime: 3
+  winEffectTime: 1.5
   sceneLoaderContainer: {fileID: 11400000, guid: ab80c1005d5b1c5488ce03837b6689a7, type: 2}
   panelChannel: {fileID: 11400000, guid: 55406210be681f543a601bc7a3fb6769, type: 2}
 --- !u!54 &826838868893738064
