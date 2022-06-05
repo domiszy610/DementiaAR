@@ -47,6 +47,11 @@ public class MazeLevelCanvas : MonoBehaviour
     {
         SceneManager.LoadScene(sceneLoaderContainer.MazeLevelSelectionPath);
     }
+    
+    public void HideWinPanel()
+    {
+        panelChannel.IsWinPanelActive = false;
+    }
 
     #endregion
 
