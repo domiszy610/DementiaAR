@@ -602,7 +602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -425.00012}
+  m_AnchoredPosition: {x: 0, y: -425.00024}
   m_SizeDelta: {x: 820, y: 2500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1074258600
@@ -772,7 +772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 410, y: -1274}
+  m_AnchoredPosition: {x: 410, y: -1275}
   m_SizeDelta: {x: 820, y: 2500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218936795
@@ -795,25 +795,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=\"left\"><b>Cel gry</b>\r</align=\"left\">\n\nCelem gry jest obracanie
-    labiryntem umieszczonym na p\u0142aszczy\u017Anie rozszerzonej rzeczywisto\u015Bci
-    w taki spos\xF3b, aby znajduj\u0105ca si\u0119 w nim kulka wpad\u0142a do otworu.\r\n\r\n\r\n<align=\"left\"><b>Rozpocz\u0119cie
-    rozgrywki</b>\r</align=\"left\">\n\r\nAby rozpocz\u0105\u0107 gr\u0119 nale\u017Cy
-    wybra\u0107 w\_menu wyboru poziomu odpowiedni poziom z poziom\xF3w odblokowanych.
+  m_text: "<align=\"left\"><b>Cel gry</b>\r</align=\"left\">\n\nCelem gry jest umieszczenie
+    kulki w\_otworze poprzez odpowiednie obracanie labiryntem.\r\n\r\n\r\n<align=\"left\"><b>Rozpocz\u0119cie
+    rozgrywki</b>\r</align=\"left\">\n\r\nAby rozpocz\u0105\u0107 gr\u0119, nale\u017Cy
+    wybra\u0107 w\_menu wyboru poziomu odpowiedni przycisk z odblokowanych poziom\xF3w.
     Na pocz\u0105tku b\u0119dzie to tylko poziom numer 1.  \r\n\r\n\r\n<align=\"left\"><b>Umieszczenie
     labiryntu w\_rozszerzonej rzeczywisto\u015Bci</b>\r</align=\"left\">\n\r\nAby
-    umie\u015Bci\u0107 labirynt na p\u0142aszczy\u017Anie w rozszerzonej rzeczywisto\u015Bci
+    umie\u015Bci\u0107 labirynt na p\u0142aszczy\u017Anie w rozszerzonej rzeczywisto\u015Bci,
     nale\u017Cy skierowa\u0107 kamer\u0119 urz\u0105dzenia tak, aby \u015Brodek ekranu
-    wskazywa\u0142 na wybran\u0105 przez gracza p\u0142aszczyzn\u0119 rozszerzonej
-    rzeczywisto\u015Bci. P\u0142aszczyzny te pojawi\u0105 si\u0119 na ekranie jako
-    wykropkowane powierzchnie.\r\n\r\n\r\n<align=\"left\"><b>Sterowanie labiryntem</b>\r</align=\"left\">\n\r\nAby
-    obr\xF3ci\u0107 labirynt i pozwoli\u0107 kulce si\u0119 toczy\u0107 nale\u017Cy
-    skorzysta\u0107 z\_przycisk\xF3w znajduj\u0105cych si\u0119 u do\u0142u ekranu,
-    kt\xF3re pozwalaj\u0105 na obr\xF3t labiryntem w prawo, b\u0105d\u017A lewo.
-    Tylko jeden przycisk powinien by\u0107 wci\u015Bni\u0119ty w danej chwili.\r\n\r\n\r\n<align=\"left\"><b>Skalowanie
-    labiryntu</b>\r</align=\"left\">\n\r\nAby zmniejszy\u0107 labirynt nale\u017Cy
-    przybli\u017Cy\u0107 do siebie dwa palce na\_ekranie, natomiast aby powi\u0119kszy\u0107
-    labirynt nale\u017Cy je od siebie odsun\u0105\u0107.\r\n"
+    wskazywa\u0142 na\_wybran\u0105 przez gracza p\u0142aszczyzn\u0119 (np. st\xF3\u0142).
+    P\u0142aszczyzny te pojawi\u0105 si\u0119 na ekranie jako wykropkowane powierzchnie.\r\n\r\n\r\n<align=\"left\"><b>Sterowanie
+    labiryntem</b>\r</align=\"left\">\n\r\nAby obr\xF3ci\u0107 labirynt i pozwoli\u0107
+    kulce si\u0119 toczy\u0107, nale\u017Cy skorzysta\u0107 z\_dw\xF3ch przycisk\xF3w
+    ze strza\u0142kami, znajduj\u0105cych si\u0119 u do\u0142u ekranu. Tylko jeden
+    przycisk powinien by\u0107 wci\u015Bni\u0119ty w danym momencie.\r\n\r\n\r\n<align=\"left\"><b>Skalowanie
+    labiryntu</b>\r</align=\"left\">\n\r\nDotkni\u0119cie ekranu dwoma palcami, a\_nast\u0119pnie
+    zbli\u017Cenie ich do siebie powoduje zmniejszenie widoku labiryntu, natomiast
+    oddalaj\u0105c od\_siebie palce mo\u017Cna powi\u0119kszy\u0107 widok labiryntu.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 4631573fac26a364d944d7e51002c67a, type: 2}

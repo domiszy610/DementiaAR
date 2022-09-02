@@ -1181,7 +1181,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Zadaniem gracza jest obracanie labiryntem za pomoc\u0105 przycisk\xF3w
-    u\_do\u0142u ekranu, tak aby kulka znajduj\u0105ca si\u0119 w\_labiryncie wpad\u0142a
+    u\_do\u0142u ekranu tak, aby kulka znajduj\u0105ca si\u0119 w\_labiryncie wpad\u0142a
     do otworu. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89a781508ebe0ea43a2a765f3e0e3983, type: 2}
